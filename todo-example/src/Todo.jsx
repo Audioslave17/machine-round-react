@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-function Todo() {what
+function Todo() {
     const [tasks, setTasks] = useState([]);
     const [newTask, setNewtask] = useState("");
     const handleInput = (e) => {
@@ -17,7 +17,7 @@ function Todo() {what
     const items = tasks.map((task,index)=><li key={index}><span>{task}</span> <button onClick={()=>del(index)}>delete</button></li>)
     return(
         <div>
-            <h1>TODO</h1>
+            <h1>TODO Anurag 21BCS1650</h1>
             <div>
                 <input type="text" placeholder="Enter the task" value={newTask} onChange={handleInput}/>
                 <button onClick={add}>add</button>
